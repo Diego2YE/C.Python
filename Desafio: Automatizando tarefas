@@ -1,0 +1,25 @@
+def enviar_email(nome):
+    print("E-mail de agradecimento enviado para", nome)
+
+
+def verificar_participantes(participantes, duracao_evento):
+    for pessoa in participantes:
+        nome = pessoa[0]
+        entrada = pessoa[1]
+        saida = pessoa[2]
+
+        tempo_assistido = saida - entrada
+
+        if tempo_assistido >= duracao_evento:
+            enviar_email(nome)
+        else:
+            print(nome, "não assistiu ao evento completo.")
+
+participantes = [
+    ["Ana", 0, 120],
+    ["Bruno", 10, 100]
+]
+
+duracao_evento = 120
+
+verificar_participantes(participantes, duracao_evento)
