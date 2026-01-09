@@ -1,0 +1,14 @@
+distancia = float(input("Digite a distância da entrega (em km): "))
+chuva = input("Está chovendo? (sim ou nao): ")
+
+if distancia <= 5:
+    taxa = 5.00
+elif distancia <= 10:
+    taxa = 8.00
+else:
+    taxa = 10.00
+
+if chuva == "sim":
+    taxa = taxa + 2.00
+
+print("Taxa de entrega: R$ {:.2f}".format(taxa))
