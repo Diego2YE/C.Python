@@ -1,0 +1,22 @@
+def enviar_email(candidato):
+    print("E-mail enviado para", candidato, "com link de agendamento.")
+
+
+def confirmar_horario(candidato):
+    print("Horário confirmado para", candidato)
+
+
+def atualizar_agenda(candidato):
+    print("Agenda atualizada com a entrevista de", candidato)
+
+
+def processo_entrevistas(lista_candidatos):
+    for candidato in lista_candidatos:
+        enviar_email(candidato)
+        confirmar_horario(candidato)
+        atualizar_agenda(candidato)
+
+    print("Processo de agendamento finalizado.")
+candidatos = ["Ana", "Bruno", "Carla"]
+
+processo_entrevistas(candidatos)
