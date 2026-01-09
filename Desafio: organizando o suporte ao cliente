@@ -1,0 +1,20 @@
+def responder_suporte(mensagem):
+    mensagem = mensagem.lower()
+
+    if "senha" in mensagem or "acesso" in mensagem:
+        print("Categoria: Acesso ao sistema")
+        print("Resposta automática: Para recuperar o acesso, utilize a opção 'Esqueci minha senha'.")
+
+    elif "pagamento" in mensagem or "boleto" in mensagem or "cartao" in mensagem:
+        print("Categoria: Pagamento")
+        print("Resposta automática: Verifique suas informações de pagamento na área financeira.")
+
+    elif "usar" in mensagem or "erro" in mensagem or "funcionalidade" in mensagem:
+        print("Categoria: Uso da plataforma")
+        print("Resposta automática: Consulte nosso guia de uso ou vídeos tutoriais.")
+
+    else:
+        print("Categoria: Outro")
+        print("Encaminhando para um atendente humano.")
+mensagem_usuario = input("Digite a mensagem do usuário: ")
+responder_suporte(mensagem_usuario)
