@@ -1,0 +1,12 @@
+def converter_para_dolar(valor_em_reais, taxa_de_cambio):
+    valor_convertido = valor_em_reais / taxa_de_cambio
+    return valor_convertido
+
+
+# programa principal
+valor_reais = float(input("Digite o valor em reais (R$): "))
+taxa = float(input("Digite a taxa de câmbio (no momento: 0.19): "))
+
+valor_dolar = converter_para_dolar(valor_reais, taxa)
+
+print("Com a taxa atual, o valor em dólares é: US$ {:.2f}".format(valor_dolar))
