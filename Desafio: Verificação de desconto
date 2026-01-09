@@ -1,0 +1,7 @@
+idade = int(input("Digite a idade do cliente: "))
+estudante = input("O cliente é estudante? (sim ou nao): ")
+
+if idade < 18 or estudante == "sim":
+    print("Meia-entrada aplicada.")
+else:
+    print("Valor integral.")
