@@ -1,0 +1,15 @@
+preco_hamburguer = 12.00
+preco_batata = 7.00
+preco_refri = 5.00
+
+qtd_hamburguer = int(input("Quantidade de hambúrgueres: "))
+qtd_batata = int(input("Quantidade de batatas fritas: "))
+qtd_refri = int(input("Quantidade de refrigerantes: "))
+
+total_hamburguer = preco_hamburguer * qtd_hamburguer
+total_batata = preco_batata * qtd_batata
+total_refri = preco_refri * qtd_refri
+
+total_pedido = total_hamburguer + total_batata + total_refri
+
+print("Valor total do pedido: R$ {:.2f}".format(total_pedido))
