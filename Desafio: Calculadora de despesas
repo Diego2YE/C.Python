@@ -1,0 +1,9 @@
+total = 0
+
+valor = int(input("Digite o valor da despesa: "))
+
+while valor != 0:
+    total = total + valor
+    valor = int(input("Digite o valor da despesa: "))
+
+print("Total gasto no mês:", total)
