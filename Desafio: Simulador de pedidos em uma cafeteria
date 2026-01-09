@@ -1,0 +1,18 @@
+quantidade_itens = int(input("Digite a quantidade de itens: "))
+
+total = 0.0
+
+for i in range(quantidade_itens):
+    nome_item = input("Digite o nome do item: ")
+    preco_item = float(input("Digite o preço do item: R$ "))
+    total = total + preco_item
+
+cliente_cadastrado = input("O cliente é cadastrado? (sim ou nao): ")
+
+if cliente_cadastrado == "sim":
+    desconto = total * 0.10
+    total_final = total - desconto
+else:
+    total_final = total
+
+print("Valor total a pagar: R$ {:.2f}".format(total_final))
