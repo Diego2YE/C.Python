@@ -1,0 +1,39 @@
+numero = int(input("Digite um número: "))
+if numero % 2 == 0:
+    print(f'O número {numero} é par.')
+else:
+    print(f'O número {numero} é ímpar.')
+
+idade = int(input('Diga sua idade: '))
+
+if 0 <= idade <= 12:
+    print('Você é uma criança.')
+elif 13 <= idade <= 17:
+    print('Você é um adolescente.')
+elif idade >= 18:
+    print('Você é um adulto.')
+
+usuario_correto = "D"
+senha_correta = "2412"
+
+usuario = input("Digite o nome de usuário: ")
+senha = input("Digite a senha: ")
+
+if usuario == usuario_correto and senha == senha_correta:
+    print("Login realizado com sucesso!")
+else:
+    print("Nome de usuário ou senha incorretos.")
+
+x = float(input("Digite o valor de x: "))
+y = float(input("Digite o valor de y: "))
+
+if x > 0 and y > 0:
+    print("O ponto está no Primeiro Quadrante.")
+elif x < 0 and y > 0:
+    print("O ponto está no Segundo Quadrante.")
+elif x < 0 and y < 0:
+    print("O ponto está no Terceiro Quadrante.")
+elif x > 0 and y < 0:
+    print("O ponto está no Quarto Quadrante.")
+else:
+    print("O ponto está localizado no eixo ou na origem.")
