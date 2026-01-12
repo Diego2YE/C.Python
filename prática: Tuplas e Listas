@@ -1,0 +1,12 @@
+lista_de_compras = ["Maçã", "Banana", "Leite", "Pão", "Queijo"]
+lista_de_compras.append('Ovos')
+lista_de_compras.remove("Banana")
+print('lista_de_compras:')
+for item in lista_de_compras:
+    print('- ' + item)
+
+coordenadas_gps = (40.7128, -74.0060)
+
+print("Coordenadas GPS:")
+print("Latitude:", coordenadas_gps[0])
+print("Longitude:", coordenadas_gps[1])
