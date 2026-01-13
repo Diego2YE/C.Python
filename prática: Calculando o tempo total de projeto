@@ -1,0 +1,8 @@
+diasA = int(input('Informe os dias para a atividade A: '))
+diasB = int(input('Informe os dias para a atividade B: '))
+diasC = int(input('Informe os dias para a atividade C: '))
+if diasA < 0 or diasB < 0 or diasC < 0:
+    print('Erro: Os dias não podem ser negativos.')
+else:
+    total_dias = diasA + diasB + diasC
+    print(f'Tempo total do projeto: {total_dias} dias')
