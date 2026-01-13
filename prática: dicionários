@@ -1,0 +1,28 @@
+pessoa = {
+    'nome': 'Diego',
+    'idade': 17,
+    'cidade': 'São Paulo'}
+
+pessoa['idade'] = 18
+pessoa['profissao'] = 'Estudante'
+del pessoa['cidade']
+
+quadrados = {}
+for numero in range(1, 6):
+    quadrados[numero] = numero**2
+print(quadrados)
+
+if 'nome' in pessoa:
+    print("\nA chave 'nome' existe no dicionário.")
+else:
+    print("\nA chave 'nome' não existe no dicionário.")
+
+frase = "o jogador venceu a partida e o jogador comemorou a vitória"
+palavras = frase.split()
+frequencia = {}
+for palavra in palavras:
+    if palavra in frequencia:
+        frequencia[palavra] += 1
+    else:
+        frequencia[palavra] = 1
+print(f'\n{frequencia}')
