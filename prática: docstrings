@@ -1,0 +1,79 @@
+def exibir_nome_do_programa():
+    """
+    Exibe o nome do programa no terminal.
+
+    Essa função é responsável por mostrar o título principal da aplicação,
+    facilitando a identificação do sistema pelo usuário.
+    """
+
+def exibir_opcoes():
+    """
+    Exibe as opções disponíveis no menu principal.
+
+    Mostra ao usuário as ações que podem ser realizadas no sistema,
+    como cadastrar, listar ou alterar o estado de restaurantes.
+    """
+
+def finalizar_app():
+    """
+    Finaliza a execução da aplicação.
+
+    Essa função encerra o programa de forma organizada,
+    exibindo uma mensagem de despedida ao usuário.
+    """
+
+def opcao_invalida():
+    """
+    Informa que a opção escolhida é inválida.
+
+    É chamada quando o usuário digita uma opção que não existe no menu,
+    solicitando que ele tente novamente.
+    """
+
+def exibir_subtitulo(texto):
+    """
+    Exibe um subtítulo formatado no terminal.
+
+    Parâmetros:
+    texto (str): O texto que será exibido como subtítulo.
+    """
+
+def cadastrar_novo_restaurante():
+    """
+    Realiza o cadastro de um novo restaurante.
+
+    Solicita ao usuário as informações necessárias e
+    adiciona o restaurante à lista de restaurantes cadastrados.
+    """
+
+def listar_restaurantes():
+    """
+    Lista todos os restaurantes cadastrados.
+
+    Exibe o nome de cada restaurante e seu respectivo estado
+    (ativo ou inativo).
+    """
+
+def alternar_estado_restaurante():
+    """
+    Altera o estado de um restaurante.
+
+    Permite ativar ou desativar um restaurante já cadastrado,
+    com base na escolha do usuário.
+    """
+
+def escolher_opcao():
+    """
+    Lê e processa a opção escolhida pelo usuário.
+
+    Direciona o fluxo do programa para a função correspondente
+    à opção selecionada no menu.
+    """
+
+def main():
+    """
+    Função principal da aplicação.
+
+    Controla o fluxo do programa, exibindo o menu,
+    lendo as opções do usuário e chamando as funções adequadas.
+    """
