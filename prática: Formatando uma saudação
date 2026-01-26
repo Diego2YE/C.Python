@@ -1,0 +1,14 @@
+nome = input("Digite o nome do cliente: ")
+cidade = input("Digite a cidade do cliente: ")
+while True:
+    genero = str(input("Digite o gênero do cliente (M/F): ")).strip().lower()
+    if genero in ['m', 'masculino']:
+        boas_vindas = "bem-vindo"
+        break
+    elif genero in ['f', 'feminino']:
+        boas_vindas = "bem-vinda"
+        break
+    else:
+        print("Opção inválida! Por favor, digite 'M' para masculino ou 'F' para feminino.")
+
+print(f"Olá, {nome}! Seja {boas_vindas} ao sistema da cidade de {cidade}.")
