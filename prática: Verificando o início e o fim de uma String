@@ -1,0 +1,8 @@
+while True:
+    url = input('Digite a URL para validação (a URL precisa começar com "https://" e precisa terminar com ".com"): ')
+
+    if url.startswith("https://") and url.endswith(".com"):
+        print("URL válida!")
+        break
+    else:
+        print("URL inválida!")
